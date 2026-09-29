@@ -1,0 +1,18 @@
+# Only needed if you work locally in VS Code (see exercises/00_setup.md).
+# Copy this file to ~/.dbt/profiles.yml and fill in the values in <...>.
+publisher_example:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: cgzmcyw-wp99721
+      
+      # fill in the three fields below
+      user: <your Snowflake user, e.g. LUDVIG_KARSTENS>
+      password: <your provided password>
+      schema: dbt_<your initials>
+      
+      role: DBT_DEVELOPER
+      warehouse: TRANSFORMING_WH
+      database: ANALYTICS_DEV
+      threads: 4

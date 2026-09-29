@@ -1,0 +1,19 @@
+sources:
+  - name: shop
+    description: >
+      The shop system: imprints, titles, customers and orders from the web shop
+      and the book club.
+    database: raw
+    schema: shop
+    tables:
+      - name: imprints
+        description: One row per imprint. Fully reloaded every night.
+
+      - name: titles
+        description: The title catalogue, with one row per edition (ISBN). Prices are in øre. Fully reloaded every night.
+
+      - name: orders
+        description: One row per order from the web shop and the book club. Timestamps are in UTC. Loaded incrementally every night.
+
+      - name: customers
+        description: Customers with an account in the web shop or the book club. Loaded incrementally every night.

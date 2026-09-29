@@ -1,0 +1,28 @@
+models:
+  - name: fct_orders
+    description: One row per order with payment totals. Cancelled orders are included with status 'cancelled' and 0 paid.
+    columns:
+      - name: order_id
+        description: Primary key.
+        data_tests:
+          - unique
+          - not_null
+      - name: ordered_at
+        description: When the order was placed (Europe/Copenhagen).
+      - name: status
+        description: "The status of the order: placed, shipped, delivered or cancelled."
+      - name: amount_paid_dkk
+        description: Sum of the successful payments for the order, in DKK.
+
+  - name: dim_customers
+    description: One row per customer with their order history. Cancelled orders are not counted.
+    columns:
+      - name: customer_id
+        description: Primary key.
+        data_tests:
+          - unique
+          - not_null
+      - name: number_of_orders
+        description: Number of orders that were not cancelled.
+      - name: lifetime_value_dkk
+        description: Sum of the successful payments across all the customer's orders, in DKK.
