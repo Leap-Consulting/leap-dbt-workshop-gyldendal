@@ -1,0 +1,18 @@
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# Workshop secrets: key pairs and passwords from leap_internals/generate_keys.sh
+leap_internals/keys/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# OS and editors
+.DS_Store
+.idea/
+dbt_internal_packages/

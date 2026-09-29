@@ -1,0 +1,2 @@
+# Packages are installed with `dbt deps`. You add dbt_utils here in the bonus exercises.
+packages: []

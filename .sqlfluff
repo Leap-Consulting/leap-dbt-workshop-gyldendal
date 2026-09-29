@@ -1,0 +1,4 @@
+[sqlfluff]
+dialect = snowflake
+templater = dbt
+encoding = utf-8
