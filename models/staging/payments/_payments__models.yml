@@ -1,0 +1,12 @@
+models:
+  - name: stg_payments__transactions
+    columns:
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+      - name: payment_method
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['mobilepay', 'dankort', 'invoice', 'gift_card', 'apple_pay']
