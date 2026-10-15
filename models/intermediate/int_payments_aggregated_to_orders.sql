@@ -1,6 +1,6 @@
 with transactions as (
 
-    select * from TODO -- TODO: reference the payments staging model
+    select * from {{ ref('stg_payments__transactions') }}
 
 ),
 

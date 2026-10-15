@@ -1,12 +1,12 @@
 with orders as (
 
-    select 'TODO' -- TODO: reference the orders staging model
+    select * from {{ ref('stg_shop__orders') }}
 
 ),
 
 payments as (
 
-    select 'TODO' -- TODO: reference the intermediate model
+    select * from {{ ref('int_payments_aggregated_to_orders') }}
 
 ),
 
