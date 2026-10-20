@@ -1,0 +1,13 @@
+sources:
+  - name: payments
+    description: >
+      Good old payments comming in hot.
+    database: raw
+    schema: payments
+    tables:
+      - name: transactions
+        identifier: trx_export_v2
+        description: >
+          One row per transaction from the payment provider. Timestamps are in UTC. Loaded incrementally every night.
+
+
