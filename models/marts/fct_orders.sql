@@ -1,6 +1,6 @@
 with orders as (
 
-    select * from {{ ref('stg_orders') }} -- TODO: reference the orders staging model
+    select * from {{ ref('stg_shop__orders') }} -- TODO: reference the orders staging model
 
 ),
 

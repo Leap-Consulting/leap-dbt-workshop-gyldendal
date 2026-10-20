@@ -1,6 +1,8 @@
+{{ config(materialized='view') }}
+
 with customers as (
 
-    select * from {{ ref('stg_customers') }} -- TODO: reference the customers staging model
+    select * from {{ ref('stg_shop__customers') }} -- TODO: reference the customers staging model
 
 ),
 

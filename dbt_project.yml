@@ -12,3 +12,7 @@ clean-targets:
   - target
   - dbt_packages
 
+models:
+  publisher_example:
+    marts:
+      +materialized: table
