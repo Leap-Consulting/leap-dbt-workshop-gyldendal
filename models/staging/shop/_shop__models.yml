@@ -30,4 +30,4 @@ models:
         data_tests:
           - accepted_values:
               arguments:
-                values: ['placed', 'shipped', 'delivered', 'cancelled']
+                values: ['placed', 'shipped', 'delivered'] #, 'cancelled']

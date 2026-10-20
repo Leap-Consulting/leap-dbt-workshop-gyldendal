@@ -1,1 +1,1 @@
-select * from {{ source('payments', 'transactions') }}
+select distinct method from {{ source('payments', 'transactions') }}
