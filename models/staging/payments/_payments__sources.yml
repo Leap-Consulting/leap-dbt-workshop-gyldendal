@@ -1,0 +1,10 @@
+sources:
+  - name: payments
+    description: >
+      The shop system: imprints, titles, customers and orders from the web shop
+      and the book club.
+    database: raw
+    schema: payments
+    tables:
+      - name: trx_export_v2
+        description: One row per transaction export. Fully reloaded every night.
