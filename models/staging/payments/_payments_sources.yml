@@ -1,0 +1,8 @@
+sources:
+  - name: payments
+    description: >
+      Transaktionsfil
+    database: raw
+    schema: payments
+    tables:
+      - name: trx_export_v2
