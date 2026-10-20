@@ -1,12 +1,12 @@
 with customers as (
 
-    select 'TODO' -- TODO: reference the customers staging model
+    select * from {{ ref('stg_customers') }} -- TODO: reference the customers staging model
 
 ),
 
 orders as (
 
-    select 'TODO' -- TODO: reference the fct_orders model
+    select * from {{ ref('fct_orders') }} -- TODO: reference the fct_orders model
 
 ),
 
